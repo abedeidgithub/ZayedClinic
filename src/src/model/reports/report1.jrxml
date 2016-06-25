@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="753aee45-4ecb-4d5a-82f7-bb34a21f945b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="35"/>
+	<queryString>
+		<![CDATA[SELECT
+     clinic.`id` AS clinic_id,
+     clinic.`Name` AS clinic_Name,
+     clinic.`Age` AS clinic_Age,
+     clinic.`Notes` AS clinic_Notes,
+     clinic.`Date` AS clinic_Date,
+     clinic.`Disease` AS clinic_Disease
+FROM
+     `clinic` clinic
+GROUP BY `Name`]]>
+	</queryString>
+	<field name="clinic_id" class="java.lang.Integer"/>
+	<field name="clinic_Name" class="java.lang.String"/>
+	<field name="clinic_Age" class="java.lang.Integer"/>
+	<field name="clinic_Notes" class="java.lang.String"/>
+	<field name="clinic_Date" class="java.lang.String"/>
+	<field name="clinic_Disease" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<image>
+				<reportElement uuid="6ffa0cd4-5541-4260-84b6-c2c792e9544f" x="0" y="0" width="164" height="120"/>
+				<imageExpression><![CDATA["D:\\second semester\\soft ware engineering\\SoftWare Skilles\\Lynda.com - Foundations of Programming - Design Patterns\\08. Factories\\ZayedClinck\\src\\img\\cant-find-the-perfect-clip-art-61962.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="77340571-3696-4c36-b057-ba77914f89dc" x="138" y="1" width="486" height="97"/>
+				<textElement>
+					<font fontName="Arabic Typesetting" size="78" isBold="true" isItalic="true" isUnderline="false"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<text><![CDATA[د / محمود  فتحي ذايد]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="558573c1-f91e-4e9f-bafa-60c7b115dbec" x="-19" y="119" width="593" height="1"/>
+			</line>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="82ba8c11-403f-44ba-9cf9-033c2e3f615c" x="82" y="1" width="136" height="24"/>
+				<textElement>
+					<font fontName="Arabic Typesetting" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="230" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" positionType="Float" stretchType="RelativeToBandHeight" x="453" y="82" width="102" height="39" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Dialog" size="20" isBold="false" pdfFontName="HYSMyeongJo-Medium" pdfEncoding="Identity-H"/>
+					<paragraph lineSpacing="Single" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[تاريخ الإعادة /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" positionType="Float" stretchType="RelativeToBandHeight" x="453" y="4" width="102" height="39" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Dialog" size="22" isBold="false" pdfFontName="HYSMyeongJo-Medium" pdfEncoding="Identity-H"/>
+					<paragraph lineSpacing="Single" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[ الاســم /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" positionType="Float" stretchType="RelativeToBandHeight" x="453" y="43" width="102" height="39" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Dialog" size="20" isBold="false" pdfFontName="HYSMyeongJo-Medium" pdfEncoding="Identity-H"/>
+					<paragraph lineSpacing="Single" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[السن /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" positionType="Float" stretchType="RelativeToBandHeight" x="453" y="146" width="102" height="39" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Dialog" size="20" isBold="false" pdfFontName="HYSMyeongJo-Medium" pdfEncoding="Identity-H"/>
+					<paragraph lineSpacing="Single" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[التشخيص /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" positionType="Float" stretchType="RelativeToBandHeight" x="383" y="191" width="173" height="39" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Dialog" size="20" isBold="false" pdfFontName="HYSMyeongJo-Medium" pdfEncoding="Identity-H"/>
+					<paragraph lineSpacing="Single" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[الملاحظات و الاشعة  /]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="206e5752-622b-4b12-89d5-64b126c8b545" x="0" y="4" width="453" height="39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinic_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a15a0c31-7bab-4246-8c15-844e7a7d284c" x="41" y="43" width="458" height="39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinic_Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5d750923-e54f-476a-b354-de179c7b9227" x="1" y="185" width="382" height="45"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinic_Notes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="435b65e3-36ab-452f-8a0f-6cc340d3d4d6" x="-4" y="146" width="468" height="39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinic_Disease}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9217f9e7-d82e-49f5-bda1-ae5cbd7c7b34" x="138" y="82" width="315" height="39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinic_Date}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="fa44297a-b4a5-47dd-a6a0-eb9bbeb59919" x="82" y="43" width="1142" height="121"/>
+				<imageExpression><![CDATA["D:\\second semester\\soft ware engineering\\SoftWare Skilles\\Lynda.com - Foundations of Programming - Design Patterns\\08. Factories\\ZayedClinck\\src\\img\\49050c58-25d5-4e30-8397-09b4df4f12ce.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="252" splitType="Stretch">
+			<image>
+				<reportElement uuid="a40f34ec-7532-46c1-bd4c-f934afe9fd66" x="0" y="0" width="164" height="252"/>
+				<imageExpression><![CDATA["D:\\second semester\\soft ware engineering\\SoftWare Skilles\\Lynda.com - Foundations of Programming - Design Patterns\\08. Factories\\ZayedClinck\\src\\img\\download.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="71f0f48b-ba8a-4cc2-ab82-acb9bcc716d3" x="99" y="172" width="457" height="40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[شبراريس الطريق السريع بجوار مدرسة شبراريس الابتدائى
+كفرالزيات -الغربية]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a2d15de-32d5-4097-9a17-589946a35ea4" x="280" y="50" width="184" height="39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arabic Typesetting" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ت /     01007217140 ]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="cae23dff-b05c-4e61-8842-c3abf325379b" x="-19" y="0" width="600" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="71f0f48b-ba8a-4cc2-ab82-acb9bcc716d3" x="41" y="212" width="476" height="40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="25"/>
+				</textElement>
+				<text><![CDATA[من السبت  الي  الخميس من الساعة   5 م الي 10 م]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="71f0f48b-ba8a-4cc2-ab82-acb9bcc716d3" x="200" y="65" width="299" height="40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="25"/>
+				</textElement>
+				<text><![CDATA[اخصائي طب وجراحة الفم والاسنان]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="77340571-3696-4c36-b057-ba77914f89dc" x="138" y="1" width="380" height="88"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arabic Typesetting" size="60" isBold="true" isItalic="true" isUnderline="false"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<text><![CDATA[د / محمود  فتحي ذايد]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="71f0f48b-ba8a-4cc2-ab82-acb9bcc716d3" x="218" y="89" width="299" height="40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="25"/>
+				</textElement>
+				<text><![CDATA[دبلومة جراحة الوجــه و الفكين]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="71f0f48b-ba8a-4cc2-ab82-acb9bcc716d3" x="256" y="105" width="299" height="40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="25"/>
+				</textElement>
+				<text><![CDATA[تقويم وزراعــه الاسنان]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
