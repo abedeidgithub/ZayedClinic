@@ -644,8 +644,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         String Name = jTextField1.getText().toLowerCase().trim();
         String password = jPasswordField1.getText().toLowerCase().trim();
-        if (Name.equals("")) {
-            // if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
+           if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
             Home1.setVisible(false);
             HomeP.setVisible(false);
             jPanel3.setVisible(true);
@@ -687,8 +686,8 @@ public class NewJFrame extends javax.swing.JFrame {
         if (c == evt.VK_ENTER) {
             String Name = jTextField1.getText().toLowerCase().trim();
             String password = jPasswordField1.getText().toLowerCase().trim();
-            if (Name.equals("")) {
-                // if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
+           // if (Name.equals("")) {
+                 if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
                 Home1.setVisible(false);
                 HomeP.setVisible(false);
                 jPanel3.setVisible(true);
@@ -707,8 +706,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         String Name = jTextField1.getText().toLowerCase().trim();
         String password = jPasswordField1.getText().toLowerCase().trim();
-        if (Name.equals("")) {
-            // if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
+           if(Name.equals("zayed clinic")||Name.equals("zayedclinic")&&password.equals("01007217140")){
             Home.setVisible(false);
             HomeP.setVisible(false);
             jPanel3.setVisible(true);
