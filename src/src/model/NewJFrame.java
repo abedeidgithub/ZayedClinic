@@ -940,7 +940,7 @@ public class NewJFrame extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "من فضلك" + "\n" + " انتظر قليلا.... ", "الطابعه ", JOptionPane.WARNING_MESSAGE);
         try {
             conn = Connect.connect();
-            JasperDesign jd = JRXmlLoader.load("D:\\second semester\\soft ware engineering\\SoftWare Skilles\\Lynda.com - Foundations of Programming - Design Patterns\\08. Factories\\ZayedClinck\\src\\src\\model\\reports\\rep_1.jrxml");
+            JasperDesign jd = JRXmlLoader.load("reports/rep_1.jrxml");
 
             String sql = "SELECT\n"
                     + "     clinic.`id` AS clinic_id,\n"
@@ -1058,7 +1058,7 @@ public class NewJFrame extends javax.swing.JFrame {
             
             System.out.println(" "+name +" "+age+" "+note+" "+disease+" "+Date1);
             conn = Connect.connect();
-            JasperDesign jd = JRXmlLoader.load("D:\\second semester\\soft ware engineering\\SoftWare Skilles\\Lynda.com - Foundations of Programming - Design Patterns\\08. Factories\\ZayedClinck\\src\\src\\model\\reports\\rep_1.jrxml");
+            JasperDesign jd = JRXmlLoader.load("reports/rep_1.jrxml");
 
             String sql = "SELECT\n"
                     + "     clinic.`id` AS clinic_id,\n"
